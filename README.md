@@ -274,4 +274,11 @@ The integration of Firebase and AI technologies enhances functionality and impro
 
 Overall, the project achieves its objectives of cultural preservation, awareness creation, and educational support. It demonstrates how technology can play a significant role in protecting cultural heritage and ensuring that valuable traditions continue to be remembered and celebrated by future generations.
 
+REFRENCE LINK
+https://ieeexplore.ieee.org/document/7016570?utm_source=chatgpt.com
+https://ieeexplore.ieee.org/document/7210289?utm_source=chatgpt.com
+https://research.brighton.ac.uk/en/publications/smart-ambient-a-pilot-study-to-contextualise-a-location-based-mob/?utm_source=chatgpt.com
+https://www.researchgate.net/publication/394552367_Emerging_Computing_Technology_for_Digital_Culture_Heritage_Preservation_and_Inheritance_A_Literature_Review?utm_source=chatgpt.com
+https://shura.shu.ac.uk/id/eprint/33270?utm_source=chatgpt.com
+
 
