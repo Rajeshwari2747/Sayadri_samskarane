@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="forest_green">#2D6A4F</color>
+    <color name="medium_green">#40916C</color>
+    <color name="light_green">#95D5B2</color>
+    <color name="pale_green">#D8F3DC</color>
+    <color name="cream">#FEFAE0</color>
+    <color name="dark_text">#1B1B1B</color>
+    <color name="warning_orange">#F4A261</color>
+    <color name="sunrise_gold">#F59E0B</color>
+    <color name="sky_blue">#3B82F6</color>
+    <color name="vibrant_teal">#14B8A6</color>
+    <color name="error_red">#DC2626</color>
+    <color name="success_green">#059669</color>
+    <color name="grey">#6B7280</color>
+    <color name="surface_soft">#F4FBF5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

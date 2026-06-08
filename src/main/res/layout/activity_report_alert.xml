@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FBF5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_gradient"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚨 Report Ecological Alert"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Alert Type Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Alert Type:"
+            android:textColor="@color/medium_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Alert Type Buttons Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnFire"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔥 Fire"
+                android:backgroundTint="#D32F2F"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnLandslide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⛰ Landslide"
+                android:backgroundTint="#F57F17"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <!-- Alert Type Buttons Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnLogging"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🪓 Logging"
+                android:backgroundTint="#5D4037"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnWildlife"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🐯 Wildlife"
+                android:backgroundTint="#388E3C"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <!-- Other Issue Button -->
+        <Button
+            android:id="@+id/btnOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Other Issue"
+            android:backgroundTint="#455A64"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Other Issue Input -->
+        <EditText
+            android:id="@+id/etOtherIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the issue (e.g. gunfire, dead animal, poaching...)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="4"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Selected Alert Type -->
+        <TextView
+            android:id="@+id/tvSelectedType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected: None"
+            android:textColor="@color/forest_green"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- GPS Coordinates -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 GPS Coordinates:"
+            android:textColor="@color/forest_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvGpsCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetching location..."
+            android:textColor="@color/dark_text"
+            android:textSize="14sp"
+            android:background="@drawable/bg_surface_card"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Take Photo Button -->
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📷 TAKE PHOTO"
+            android:textSize="15sp"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Photo Preview -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_surface_card"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Photo Preview" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmitReport"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="✅ SUBMIT REPORT"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/forest_green"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

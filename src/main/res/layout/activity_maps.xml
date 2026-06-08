@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4FBF5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_gradient"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_subtitle"
+            android:textColor="@color/light_green"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_surface_card"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_legend_title"
+                android:textColor="@color/forest_green"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_legend_reported_item" android:textSize="12sp" android:textColor="@color/dark_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_legend_verified_item" android:textSize="12sp" android:textColor="@color/dark_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_legend_dispatched_item" android:textSize="12sp" android:textColor="@color/dark_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_legend_resolved_item" android:textSize="12sp" android:textColor="@color/dark_text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMapEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_surface_card"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/map_empty_state"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnRefreshMap"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:text="@string/refresh_map"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/forest_green" />
+
+</LinearLayout>
+
+

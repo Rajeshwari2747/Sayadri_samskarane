@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SahyadriSamrakshane</string>
+    <string name="forest_helpline_number">18004251666</string>
+    <string name="forest_helpline_display">1800–425–1666 (Toll Free)</string>
+    <string name="forest_helpline_label">Forest Helpline</string>
+    <string name="call_forest_helpline">Call Forest Helpline</string>
+    <string name="tap_to_call">Tap to call</string>
+    <string name="app_logo_description">Sahyadri Samrakshane app logo</string>
+    <string name="wildlife_map">Wildlife Map</string>
+    <string name="wildlife_map_button">🗺 Wildlife Map</string>
+    <string name="open_map">Open Map</string>
+    <string name="map_title">Wildlife Reports Map</string>
+    <string name="map_subtitle">Room-stored alerts plotted on the map</string>
+    <string name="map_legend_title">Legend</string>
+    <string name="map_legend_reported">Reported</string>
+    <string name="map_legend_verified">Verified</string>
+    <string name="map_legend_dispatched">Team Dispatched</string>
+    <string name="map_legend_resolved">Resolved</string>
+    <string name="map_legend_reported_item">🟠 Reported</string>
+    <string name="map_legend_verified_item">🔵 Verified</string>
+    <string name="map_legend_dispatched_item">🟢 Team Dispatched</string>
+    <string name="map_legend_resolved_item">🔷 Resolved</string>
+    <string name="refresh_map">Refresh Map</string>
+    <string name="map_empty_state">No saved alerts yet. Report one to see it on the map.</string>
+</resources>
